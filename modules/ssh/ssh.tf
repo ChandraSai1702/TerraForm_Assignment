@@ -8,6 +8,6 @@ resource "aws_key_pair" "ec2_key" {
   public_key = tls_private_key.ssh.public_key_openssh
 
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 }
