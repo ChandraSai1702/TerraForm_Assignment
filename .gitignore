@@ -1,5 +1,4 @@
 .terraform/.terraform/
-.terraform/
-TerraForm_Assignment/
 *.tfstate
 *.tfstate.backup
+.terraform/
