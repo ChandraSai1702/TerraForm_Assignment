@@ -4,6 +4,6 @@ resource "tls_private_key" "ssh" {
 }
 
 resource "aws_key_pair" "ec2_key" {
-  key_name   = "${var.project_name}-key"
+  key_name   = "terraform-key"
   public_key = tls_private_key.ssh.public_key_openssh
 }
