@@ -1,5 +1,9 @@
+resource "tls_private_key" "ssh" {
+  algorithm = "RSA"
+  rsa_bits  = 4096
+}
+
 resource "aws_key_pair" "ec2_key" {
-  key_name = "ec2-key"
-  # public_key = file("/home/sigmoid/Downloads/todo_ec2.pub")
-  public_key = file("/home/sigmoid/.ssh/id_rsa.pub")
+  key_name   = "${var.project_name}-key"
+  public_key = tls_private_key.ssh.public_key_openssh
 }
