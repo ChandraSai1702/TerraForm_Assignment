@@ -8,7 +8,7 @@ module "networking" {
 
 module "ssh" {
   source = "./modules/ssh"
-  project_name = var.project_name
+
 }
 
 module "ec2" {

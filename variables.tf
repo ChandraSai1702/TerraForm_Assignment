@@ -9,8 +9,3 @@ variable "instance_type" {
   type = string
   default = "t2.micro"
 }
-
-variable "project_name" {
-  description = "project name for tagging"
-  type = string
-}
