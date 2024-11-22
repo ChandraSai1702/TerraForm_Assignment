@@ -1,3 +1,5 @@
 .terraform/.terraform/
 .terraform/
 TerraForm_Assignment/
+terraform.tfstate
+terraform.tfstate.backup
