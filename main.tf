@@ -20,3 +20,11 @@ module "ec2" {
   security_group = module.networking.security_group_id
   key_name       = module.ssh.key_name
 }
+
+terraform {
+  backend "s3" {
+    bucket = "tfbucket-backup"
+    key = "terraform/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
