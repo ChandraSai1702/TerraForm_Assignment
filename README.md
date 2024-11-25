@@ -47,10 +47,6 @@
     
     sudo systemctl status jenkins
 
-**Get the initial admin password**
-
-    sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-
 **Access Jenkins at**
 
      http://localhost:8080
@@ -61,13 +57,11 @@
   2. ssh.tf
   3. ec2_instances.tf
 
-**Step 4: Create a GitHub Repository**
+**Step 4: Create a GitHub Repository and  Push The Entire Files to Git Hub**
 
-**Step 5: Push The Entire Files to Git Hub**
+**Step 5: In Jenkins Create a AWS Credentials of Access Key and Secret Access Key**
 
-**Step 6: In Jenkins Create a AWS Credentials of Access Key and Secret Access Key**
-
-**Step7: Write the Jenkins File**
+**Step 6: Write the Jenkins File**
 ```
 pipeline {
     agent any
